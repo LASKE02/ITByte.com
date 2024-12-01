@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <title> PRODAVNICA </title>
+        <style>
+            /* body */
+            body{margin:0}
+            body::-webkit-scrollbar{
+            display: none;}
+
+            /* header,footer,section dimension */
+            header{box-sizing: border-box;
+                    width:1536;
+                    height:130px;
+                    background-color: rgb(0, 96, 105);
+                    margin: 0 auto;}
+            
+            section{box-sizing: border-box;
+                    position: relative;
+                    width:1536px;
+                    height:2200px;
+                    background-color: red; 
+                    margin: 0 auto;}
+
+            footer{box-sizing: border-box;
+                    position: relative;
+                    width:1536px;
+                    height:275px;
+                    background-color: rgb(0,130,105);
+                    margin: 0 auto;}
+            
+            /* header table*/
+            header table{box-sizing: border-box;
+                        margin: 0 auto;
+                        border-spacing: 0;
+                        }
+            header table td{line-height: 1px;
+                            text-align: center;
+                            font-size: 16pt;
+                            padding:0;}
+            header table td.praznostrana{width: 200px;}
+            header table td.logotel{width: 30px;}
+            header table td.logoemail{width: 30px;}                
+            header table td#tel{width: 160px;}
+            header table td#email{width: 180px;}
+            header table td.prazno{width: 496px;}
+            header table td#sin{width: 120px;}
+            header table td#log{width: 120px;}
+
+            header table td.logo{width:340px; padding: 0;}
+            header table td#pretraga{width:616px; padding: 0;}
+            header table td#korpa{width:120px; padding: 0;}
+
+            header table tr#nivo1 td{height: 30px;}
+            header table tr#nivo2 td{height: 92px;}
+
+            header table td.logogmail img{width:30px; height: 30px; padding: 0;}
+            header table td.logotel img{width:30px; height: 30px; padding: 0;}
+            
+            header table td.logo img{width:400px; height: 92px; padding: 0;}
+            header table td#korpa img{width:120px; height: 92px; padding: 0;}
+            header table td div.polje_pretraga{width:616px; height: 70px; position: relative;}
+            
+            header table td div.polje_pretraga input{width:616px;
+                                                    height:50px;
+                                                    font-size:16pt;
+                                                    border:2px solid black;
+                                                    border-radius:15px;
+                                                    margin: 20px 0;}
+            header table td div.polje_pretraga img{width:40px;
+                                                height: 40px;
+                                                padding:0;}
+            header table td div.polje_pretraga button{width: 40px;
+                                                    height:40px;
+                                                    position: absolute;
+                                                    left: 570px;
+                                                    top: 25px;
+                                                    border: 0;
+                                                    padding: 0;}
+         
+            header table td a{text-decoration: none; 
+                            color: white;
+                            padding: 0;}
+            
+            /* section table */
+            div.proizvod{position: relative;
+                        float: left;
+                        width: 374px;
+                        height: 200px;
+                        background: lightblue;
+                        margin: 5px;}
+            
+            /* footer table */
+            footer table{box-sizing: border-box;
+                        margin: 0 auto;
+                        border-spacing: 0;}
+            footer table td{line-height: 1px;
+                            text-align: center;
+                            font-size: 16pt;
+                            padding:0;
+                            }
+            footer table td.card{width: 1536px;
+                                margin:0 auto;}
+            footer table td.card img{width: 500px;
+                                height:70px;}
+            footer table td a{text-decoration: none; 
+                            color: white;
+                            padding: 0;}
+            footer table td#praznostranad{width:150px;}
+            footer table td.logod{width: 350px;}
+            footer table td.polje{width: 150px;
+                                    font-size: 26pt;
+                                    font-weight: bold;}
+            footer table td.praznod{width:636px;}
+            footer table td.sm{width:50px;}
+            footer table td.logod img{width: 350px; 
+                                    height: 100px;}
+            footer table td.sm img{width: 40px; 
+                                    height: 40px;}
+            
+            footer table tr#nivo1d{height: 150px;}
+            footer table tr#nivo2d{height: 70px;}
+            footer table tr#nivo3d{height: 50px;}
+            footer table tr#nivo1d td{background-color: rgb(0, 96, 105);}
+
+            footer table td p{color: white;
+                            font-weight: bold;}
+
+        </style>
+    </head>
+    <body>
+            <header>
+                <table>
+                    <tr id="nivo1">
+                        <td class="praznostrana" rowspan="2"></td>
+                        <td class="logotel"><a href="itbyte.rs"><img src="telephonelogo.jpg"></a></td>
+                        <td colspan="2" id="tel"><a href="tel:+381679035126">+381679035126</a></td>
+                        <td class="logogmail"><a href="itbyte.rs"><img src="emaillogo.jpg"></a></td>
+                        <td colspan="3" id="email"><a href="mailto:itbyte@gmail.com">itbyte@gmail.com</a></td>
+                        <td colspan="5" class="prazno"></td>
+                        <td colspan="3" id="sin"><a href="registracija">Registruj se</a></td>
+                        <td colspan="3" id="log"><a href="prijava">Prijavi se</a></td>
+                        <td class="praznostrana" rowspan="2"></td>
+                    </tr>
+                    <tr id="nivo2">
+                        <td colspan="7" class="logo"><a href="itbyte.rs"><img src="logo.jpg"></a></td>
+                        <td colspan="8" id="pretraga">
+                        <form method="post">
+                        <div class="polje_pretraga">
+                        <input type="search" name="proizvod" placeholder="uneti proizvod">
+                        <button><img src="search.jpg"></button>
+                        </div>
+                        </form>
+                        </td>
+                        <td colspan="3" id="korpa"><a href="korpa"><img src="cartlogo.jpg"></a></td>
+                    </tr>
+                </table>
+            </header>
+            <section>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+                <div class="proizvod">&nbsp</div>
+            </section>
+            <footer>
+                <table>
+                <tr id="nivo1d">
+                <td id="praznostranad"></td>
+                <td colspan="3" class="logod"><a href="itbyte.rs"><img src="logo.jpg"></a></td>
+                <td class="polje"><a href="isporuka">ISPORUKA</a></td>
+                <td class="polje"><a href="FAQ">FAQ</a></td>
+                <td colspan="4" class="praznod"></td>
+                <td class="sm"><a href="https:\\instagram.com" target="_blank"><img src="instagramlogo.jpg"></a></td>
+                <td class="sm"><a href="https:\\facebook.com" target="_blank"><img src="facebooklogo.jpg"></a></td>
+                <td class="sm"><a href="https:\\x.com"  target="_blank" ><img src="xlogo.jpg"></a></td>
+                <td id="praznostranad"></td>
+                </tr>
+                <tr id="nivo2d">
+                <td colspan="14" class="card"><img src="cardslogo.jpg"></td>
+                </tr>
+                <tr id="nivo3d">
+                <td colspan="14"><p>Copyright © 2024 ITByte. Sva prava zadrzana. Develop by ITByte</p></td> 
+                </tr>
+                </table>
+            </footer>
+    </body>
+</html>
